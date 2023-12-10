@@ -35,7 +35,7 @@
     <h1 style="text-align: center;">Poznaj dostępne terminy </h1>
     <div class="main">
         <div id="carousel">
-            <img src="/Audi A5/zdj/kwbez.png" id="current-image" style="height: 70vh; width: 150vh; margin-left: 10%;  ">
+            <img src="/Audi A5/zdj/styczen.png" id="current-image" style="height: 70vh; width: 150vh; margin-left: 10%;  ">
             <div class="przyciski">
                 <button id="prev-button" ><p><</p></button> &nbsp;&nbsp;&nbsp;
                 <button id="next-button" ><p>></p></button>
@@ -43,10 +43,10 @@
         </div>
         <div class="legenda">
             <div class="zajete">
-                <img src="/Audi A5/zdj/kwbez.png" style="height: 100px; height: 100px;"> - Obecnie zajęty termin
+                <img src="/Audi A5/zdj/zajete.png" style="height: 100px; height: 100px; opacity: 70%;"> - Obecnie zajęty termin
             </div>
             <div class="wolne">
-                <img src="/Audi A5/zdj/kwbez.png" style="height: 100x; height: 100px;"> - Obecnie wolny termin
+                <img src="/Audi A5/zdj/wolne.png" style="height: 100x; height: 100px; opacity: 70%;"> - Obecnie wolny termin
             </div>
           
         </div>
@@ -55,58 +55,57 @@
 
 
 
-<div class="Formularz">
-    <p style="font-size: 5vh;">Formularz Rezerwacji</p>
-    <form action="#" method="post">
-        <label for="termin">*Termin:</label>
-        <input type="date" id="termin" name="termin" required>
-    
-        <label for="samochod">*Samochód:</label>
-        <select id="samochod" name="samochod" required>
-            <option value="opcja1">Audi A5</option>
-            <option value="opcja2">Mercedes GLA</option>
-        </select>
-    
-        <label for="trasa">*Twoja trasa (link):</label>
-        <input type="url" id="trasa" name="trasa" placeholder="Wklej link do twojej trasy z mapy google" required>
-    
-        <label for="kolor">*Kolor Kwiatów:</label>
-        <select id="samochod" name="samochod" required>
-            <option value="opcja1">Fioletowe</option>
-            <option value="opcja2">Zielone</option>
-            <option value="opcja3">Czerwone</option>
-            <option value="opcja4">Beżowe</option>
-        </select>
-        <label for="kolor">*Kolor wstążek:</label>
-        <select id="samochod" name="samochod" required>
-            <option value="opcja1">Fioletowe</option>
-            <option value="opcja2">Zielone</option>
-            <option value="opcja3">Czerwone</option>
-            <option value="opcja4">Beżowe</option>
-        </select>
-    
-        <label for="kolor">*Wzór tablic</label>
-        <select id="samochod" name="samochod" required>
-            <option value="opcja1">Fioletowe</option>
-            <option value="opcja2">Zielone</option>
-            <option value="opcja3">Czerwone</option>
-            <option value="opcja4">Beżowe</option>
-        </select>
-    
-        <label for="email">*Email:</label>
-        <input type="email" id="email" name="email" required>
-    
-        <label for="telefon">*Nr telefonu:</label>
-        <input type="tel" id="telefon" name="telefon" required>
-    
-        <label for="wiadomosc">Wiadomość:</label>
-        <textarea id="wiadomosc" name="wiadomosc" rows="4" placeholder="Wpisz opcjonalną wiadomość"></textarea>
-    
-        <button type="submit">Wyślij</button>
-    </form>
-    
-</div>
-
+        <div class="Formularz">
+            <p style="font-size: 5vh;">Formularz Rezerwacji</p>
+            <form target="_blank" action="https://formsubmit.co/dominik-chabro@wp.pl" method="POST">
+                <label for="termin">*Termin:</label>
+                <input type="date" id="termin" name="termin" required>
+            
+                <label for="samochod">*Samochód:</label>
+                <select id="samochod" name="samochod" required>
+                    <option value="opcja1">Audi A5</option>
+                    <option value="opcja2">Mercedes GLA</option>
+                </select>
+            
+                <label for="trasa">*Twoja trasa (link):</label>
+                <input type="url" id="trasa" name="trasa" placeholder="Wklej link do twojej trasy z mapy google" required>
+            
+                <label for="kolorKwiatow">*Kolor Kwiatów:</label>
+                <select id="kolorKwiatow" name="kolorKwiatow" required>
+                    <option value="opcja1">Fioletowe</option>
+                    <option value="opcja2">Zielone</option>
+                    <option value="opcja3">Czerwone</option>
+                    <option value="opcja4">Beżowe</option>
+                </select>
+                <label for="kolorWstazek">*Kolor wstążek:</label>
+                <select id="kolorWstazek" name="kolorWstazek" required>
+                    <option value="opcja1">Fioletowe</option>
+                    <option value="opcja2">Zielone</option>
+                    <option value="opcja3">Czerwone</option>
+                    <option value="opcja4">Beżowe</option>
+                </select>
+            
+                <label for="wzorTablic">*Wzór tablic:</label>
+                <select id="wzorTablic" name="wzorTablic" required>
+                    <option value="opcja1">Fioletowe</option>
+                    <option value="opcja2">Zielone</option>
+                    <option value="opcja3">Czerwone</option>
+                    <option value="opcja4">Beżowe</option>
+                </select>
+            
+                <label for="email">*Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="telefon">*Nr telefonu:</label>
+                <input type="tel" id="telefon" name="telefon" required>
+            
+                <label for="wiadomosc">Wiadomość:</label>
+                <textarea id="wiadomosc" name="wiadomosc" rows="4" placeholder="Wpisz opcjonalną wiadomość"></textarea>
+            
+                <button type="submit">Wyślij</button>
+            </form>
+        </div>
+        
 
 
 
@@ -126,7 +125,7 @@
 
 
         <script>
-            var images = ["/Audi A5/zdj/kalendarz.png", "/Audi A5/zdj/kwnieb.png", "/Audi A5/zdj/kwziel.jpg"];
+            var images = ["/Audi A5/zdj/styczen.png", "/Audi A5/zdj/luty.png", "/Audi A5/zdj/marzec.png","/Audi A5/zdj/kwiecie.png","/Audi A5/zdj/maj.png","/Audi A5/zdj/czerwiec.png","/Audi A5/zdj/lipiec.png","/Audi A5/zdj/sierpien.png","/Audi A5/zdj/wrzesien.png","/Audi A5/zdj/pazdziernik.png","/Audi A5/zdj/listopad.png","/Audi A5/zdj/grudzien.png"];
             var currentImageIndex = 0;
 
             document.getElementById("carousel").addEventListener("click", function(event) {
