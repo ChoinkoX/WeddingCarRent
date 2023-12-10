@@ -28,7 +28,142 @@
         <div class="mainphoto">
             <img src="zdj/main.jpg" style="width: 800px;">
         </div>
+
+
+<div class="Terminarz">
+   
+    <h1 style="text-align: center;">Poznaj dostępne terminy </h1>
+    <div class="main">
+        <div id="carousel">
+            <img src="/Audi A5/zdj/kwbez.png" id="current-image" style="height: 70vh; width: 150vh; margin-left: 10%;  ">
+            <div class="przyciski">
+                <button id="prev-button" ><p><</p></button> &nbsp;&nbsp;&nbsp;
+                <button id="next-button" ><p>></p></button>
+            </div>
+        </div>
+        <div class="legenda">
+            <div class="zajete">
+                <img src="/Audi A5/zdj/kwbez.png" style="height: 100px; height: 100px;"> - Obecnie zajęty termin
+            </div>
+            <div class="wolne">
+                <img src="/Audi A5/zdj/kwbez.png" style="height: 100x; height: 100px;"> - Obecnie wolny termin
+            </div>
+          
+        </div>
+        <p style="font-size: 20px; margin-left: 19vh;"> <i>*Pozostałe dni możliwe do rezerwacji telefonicznie </i></p>
+
+
+
+
+<div class="Formularz">
+    <p style="font-size: 5vh;">Formularz Rezerwacji</p>
+    <form action="#" method="post">
+        <label for="termin">*Termin:</label>
+        <input type="date" id="termin" name="termin" required>
+    
+        <label for="samochod">*Samochód:</label>
+        <select id="samochod" name="samochod" required>
+            <option value="opcja1">Audi A5</option>
+            <option value="opcja2">Mercedes GLA</option>
+        </select>
+    
+        <label for="trasa">*Twoja trasa (link):</label>
+        <input type="url" id="trasa" name="trasa" placeholder="Wklej link do twojej trasy z mapy google" required>
+    
+        <label for="kolor">*Kolor Kwiatów:</label>
+        <select id="samochod" name="samochod" required>
+            <option value="opcja1">Fioletowe</option>
+            <option value="opcja2">Zielone</option>
+            <option value="opcja3">Czerwone</option>
+            <option value="opcja4">Beżowe</option>
+        </select>
+        <label for="kolor">*Kolor wstążek:</label>
+        <select id="samochod" name="samochod" required>
+            <option value="opcja1">Fioletowe</option>
+            <option value="opcja2">Zielone</option>
+            <option value="opcja3">Czerwone</option>
+            <option value="opcja4">Beżowe</option>
+        </select>
+    
+        <label for="kolor">*Wzór tablic</label>
+        <select id="samochod" name="samochod" required>
+            <option value="opcja1">Fioletowe</option>
+            <option value="opcja2">Zielone</option>
+            <option value="opcja3">Czerwone</option>
+            <option value="opcja4">Beżowe</option>
+        </select>
+    
+        <label for="email">*Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="telefon">*Nr telefonu:</label>
+        <input type="tel" id="telefon" name="telefon" required>
+    
+        <label for="wiadomosc">Wiadomość:</label>
+        <textarea id="wiadomosc" name="wiadomosc" rows="4" placeholder="Wpisz opcjonalną wiadomość"></textarea>
+    
+        <button type="submit">Wyślij</button>
+    </form>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            var images = ["/Audi A5/zdj/kalendarz.png", "/Audi A5/zdj/kwnieb.png", "/Audi A5/zdj/kwziel.jpg"];
+            var currentImageIndex = 0;
+
+            document.getElementById("carousel").addEventListener("click", function(event) {
+                if (event.clientX < window.innerWidth / 2) {
+                    currentImageIndex--;
+                    if (currentImageIndex < 0) {
+                        currentImageIndex = images.length - 1;
+                    }
+                } else {
+                    currentImageIndex++;
+                    if (currentImageIndex >= images.length) {
+                        currentImageIndex = 0;
+                    }
+                }
+                document.getElementById("current-image").src = images[currentImageIndex];
+            });
+        </script>
+
     </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    
 </body>
 
 </html>
