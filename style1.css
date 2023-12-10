@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(134, 125, 125);
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    background-color: purple;
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    height: 5%;
+    font-size: 40px;
+}
+
+.jakos {
+    background: url(film.mp4);
+}
+
+.menu {
+    height: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+#opcja1 {
+    display: block;
+}
+
+.przyciski {
+    width: 100%;
+    background-color: blue;
+    height: 40px;
+    text-align: center;
+}
+
+.choose {
+    text-align: center;
+}
+
+.guzik {
+    background-color: #4CAF50;
+    /* zielony kolor tła */
+    color: white;
+    /* biały kolor tekstu */
+    padding: 15px 32px;
+    /* odstępy wewnątrz przycisku */
+    text-align: center;
+    /* wyśrodkowanie tekstu */
+    text-decoration: none;
+    /* brak podkreślenia */
+    display: inline-block;
+    /* wyświetlanie przycisku jako blok */
+    font-size: 16px;
+    /* rozmiar czcionki */
+    margin: 4px 2px;
+    /* odstępy między przyciskami */
+    cursor: pointer;
+    /* kursor przycisku */
+    border-radius: 5px;
+    /* zaokrąglenie rogów */
+}
+
+.menu-bar {
+    border-radius: 25px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: inline-flex;
+    background-color: rgba(111, 33, 148, 0.4);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    padding: 10px 20px;
+    width: 90%;
+    height: 10%;
+    text-align: center;
+}
+
+.menu-bar li {
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 22px 90px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.menu-bar li::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: 0.2s;
+    border-radius: 25px;
+}
+
+.menu-bar li:hover {
+    color: black;
+}
+
+.menu-bar li:hover::before {
+    background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+    box-shadow: 0px 3px 20px 0px black;
+    transform: scale(1.2);
+}
+
+#selectedTab {
+    text-align: center;
+    font-size: 40px;
+}
