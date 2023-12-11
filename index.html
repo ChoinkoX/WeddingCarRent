@@ -13,15 +13,16 @@
 </head>
 
 <body>
+    
      <div class="logo">SlubnaJazda.pl</div>
         <div class="menu">
             <nav>
-                <a href="#">Home</a>
-                <a href="#">O nas</a>
-                <a href="#">Flota</a>
-                <a href="#">Zarezerwuj</a>
-                <a href="#">Dekoracje</a>
-                <a href="#">Kontakt</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">O nas</a>
+                <a href="cars.html">Flota</a>
+                <a href="">Zarezerwuj</a>
+                <a href="decoration.html">Dekoracje</a>
+                <a href="contact.html">Kontakt</a>
             </nav>
         </div>
 
@@ -162,7 +163,23 @@
 
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+           
+            var zarezerwujButton = document.querySelector('.menu a[href=""]');
+            
+           
+            zarezerwujButton.addEventListener('click', function (event) {
+                event.preventDefault(); 
     
+               
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: 'smooth' 
+                });
+            });
+        });
+    </script> 
 </body>
 
 </html>

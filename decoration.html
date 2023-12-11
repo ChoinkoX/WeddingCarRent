@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Audi A5 Konfigurator</title>
+    <link rel="stylesheet" href="decoration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://assets3.lottiefiles.com/packages/lf20_6pgBO2srnh.json" />
+   
+</head>
+</head>
+
+<body>
+    
+     <div class="logo">SlubnaJazda.pl</div>
+        <div class="menu">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">O nas</a>
+                <a href="cars.html">Flota</a>
+                <a href="">Zarezerwuj</a>
+                <a href="decoration.html">Dekoracje</a>
+                <a href="contact.html">Kontakt</a>
+            </nav>
+        </div>
+
+     
+
+      
+    <div class="flowers">
+        <h1 style="text-align: center;">Kwiaty </h1>
+        <div class="main">
+            <div id="carousel">
+                <img src="/Audi A5/zdj/styczen.png" id="current-image" style="height: 70vh; width: 150vh; margin-left: 10%;  ">
+                <div class="przyciski">
+                    <button id="prev-button" ><p><</p></button> &nbsp;&nbsp;&nbsp;
+                    <button id="next-button" ><p>></p></button>
+                </div>
+            </div>
+
+
+        </div>
+        
+      
+    <div class="flowers">
+        <h1 style="text-align: center;">Wstążki</h1>
+        <div class="main">
+            <div id="carousel">
+                <img src="/Audi A5/zdj/styczen.png" id="current-image" style="height: 70vh; width: 150vh; margin-left: 10%;  ">
+                <div class="przyciski">
+                    <button id="prev-button" ><p><</p></button> &nbsp;&nbsp;&nbsp;
+                    <button id="next-button" ><p>></p></button>
+                </div>
+            </div>
+
+
+        </div>
+        
+      
+    <div class="flowers">
+        <h1 style="text-align: center;">Tablice </h1>
+        <div class="main">
+            <div id="carousel">
+                <img src="/Audi A5/zdj/styczen.png" id="current-image" style="height: 70vh; width: 150vh; margin-left: 10%;  ">
+                <div class="przyciski">
+                    <button id="prev-button" ><p><</p></button> &nbsp;&nbsp;&nbsp;
+                    <button id="next-button" ><p>></p></button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            var images = ["/Audi A5/zdj/styczen.png", "/Audi A5/zdj/luty.png", "/Audi A5/zdj/marzec.png","/Audi A5/zdj/kwiecie.png","/Audi A5/zdj/maj.png","/Audi A5/zdj/czerwiec.png","/Audi A5/zdj/lipiec.png","/Audi A5/zdj/sierpien.png","/Audi A5/zdj/wrzesien.png","/Audi A5/zdj/pazdziernik.png","/Audi A5/zdj/listopad.png","/Audi A5/zdj/grudzien.png"];
+            var currentImageIndex = 0;
+
+            document.getElementById("carousel").addEventListener("click", function(event) {
+                if (event.clientX < window.innerWidth / 2) {
+                    currentImageIndex--;
+                    if (currentImageIndex < 0) {
+                        currentImageIndex = images.length - 1;
+                    }
+                } else {
+                    currentImageIndex++;
+                    if (currentImageIndex >= images.length) {
+                        currentImageIndex = 0;
+                    }
+                }
+                document.getElementById("current-image").src = images[currentImageIndex];
+            });
+        </script>
+
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+           
+            var zarezerwujButton = document.querySelector('.menu a[href=""]');
+            
+           
+            zarezerwujButton.addEventListener('click', function (event) {
+                event.preventDefault(); 
+    
+               
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: 'smooth' 
+                });
+            });
+        });
+    </script> 
+</body>
+
+</html>
+    
+    
+    
+</body>
+
+</html>
